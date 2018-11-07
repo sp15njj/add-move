@@ -1,0 +1,258 @@
+@import 'public.scss';
+
+
+
+#top{
+	height:24px;
+	background:#f1f1f1;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+		#top-l{
+				float:left;
+				width:260px;
+					a{
+						font-size:12px;
+						line-height:24px;		
+						color:#666;
+						text-align:center;
+					}
+					a:hover{
+						text-decoration:underline;
+					}
+					.app{
+						float:left;
+							.egg{
+								float:left;
+								
+							}							
+							.phone{
+								float:left;
+								width:14px;
+								height:14px;
+								background:url(../../img/topbar_sprite150428.png) no-repeat;
+								margin:7px 7px 0 7px;
+								background-position:0px 0px;
+								hover{
+									background-position:0px -20px;
+								}
+							}
+							
+					}
+					.app>i:hover{
+						background-position:0px -20px;
+					}
+					.company{
+							float:left;
+							margin-left:10px;			
+								.tuan{
+									float:left;
+									font-size:12px;
+									line-height:24px;	
+									color:#666;
+									text-align:center;
+								}	
+								.tuan:hover{
+									text-decoration:underline;
+								}
+								.person{
+									float:left;
+									width:14px;
+									height:14px;
+									background:url(../../img/topbar_sprite150428.png) no-repeat;
+									background-position:0px -45px;		
+									margin:7px 7px 0 0;
+								}
+					}
+					.company>i:hover{
+						background-position:0px -65px;
+					}
+					
+					.open{						
+						float:left;
+						margin-left:10px;
+						.tai{
+							float:left;
+							font-size:12px;
+							line-height:24px;	
+							color:#666;
+							text-align:center;
+						}	
+						.tuan:hover{
+							text-decoration:underline;
+						}
+						.black{
+							float:left;
+							width:14px;
+							height:14px;
+							background:url(../../img/topbar_sprite150428.png) no-repeat;
+							background-position:0px -92px;		
+							margin:7px 7px 0 0;
+						}
+					}
+					.open>i:hover{
+						background-position:0px -112px;
+					}
+						
+		
+		}
+		#top-r{
+			float:right;
+			overflow:hidden;			
+			.welcome{
+				float:left;
+				margin-left:12px;
+				font-size:12px;
+				line-height:24px;		
+				color:#666;
+				text-align:center;
+			}
+			.sev,.help{
+				float:left;
+				margin-left:22px;
+				height:24px;
+				font-size:12px;
+				line-height:24px;	
+				color:#666;
+				text-align:center;
+			}
+		}	
+}	
+
+
+
+header{
+	height:105px;
+	.logo{
+		float:left;
+		border-right:1px solid #dadada;
+		padding-right:25px;
+		margin-top:19px;
+	}
+	.login{
+		float:left;
+		height:50px;
+		text-align:center;
+		font-size:23px;
+		margin:19px 0 0 25px;
+		
+		line-height:50px;
+	}
+}
+
+#reg{
+	height:484px;
+	background:#f9f9f9;
+	position:relative;
+	overflow:hidden;
+	.lo{
+		position:absolute;
+		right:80px;
+		top:10px;
+		span{
+			font-size:12px;
+			line-height:33px;
+		}
+		i{			
+			color:#fe0000;
+		}
+	}
+	.center{				
+		position:absolute;
+		left:300px;
+		top:50px;
+		.f{
+			width:110px;		
+			i{
+				float:left;
+				display:inline-block;
+				width:25px;
+				height:25px;
+				background:#db712d;
+				border-radius: 14px;
+				font-size:15px;
+				line-height:25px;
+				text-align:center;
+				color:#fff;
+			}
+			span{
+				float:left;
+				font-size:17px;
+				line-height:25px;
+				color:#db712d;
+				margin-left:5px;
+				overflow:hidden;
+				
+				b{
+					margin:0 5px -15px 5px;
+					display:inline-block;
+					width:150px;
+					height:20px;		
+					border-top:1px solid #db712d;
+				}
+			}
+					
+		}
+		.div{
+
+			
+			i{
+				
+				
+				background:#e1e1e1;
+				
+			}			
+		}
+		
+	}
+	
+	
+	input:focus {
+		outline:none;
+	}
+	.tabs{		
+		width:540px;
+		margin:110px auto;
+		.item{			
+			margin-bottom:25px;
+			label{
+				font-soze:12px;
+				line-height:30px;
+			}
+			input{
+				width:255px;
+				height:30px;
+			}
+			#getCode{
+				margin-left:70px;;
+				text-align:center;
+				display:block;
+				width:250px;
+				height:32px;
+				font-size:12px;
+				line-height:30px;
+				background:#e1e1e1;
+				border:1px solid #868686;
+			}
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

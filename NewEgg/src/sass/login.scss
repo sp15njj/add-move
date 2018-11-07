@@ -1,0 +1,310 @@
+@import 'public.scss';
+
+
+
+#top{
+	height:24px;
+	background:#f1f1f1;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+		#top-l{
+				float:left;
+				width:260px;
+					a{
+						font-size:12px;
+						line-height:24px;		
+						color:#666;
+						text-align:center;
+					}
+					a:hover{
+						text-decoration:underline;
+					}
+					.app{
+						float:left;
+							.egg{
+								float:left;
+								
+							}							
+							.phone{
+								float:left;
+								width:14px;
+								height:14px;
+								background:url(../../img/topbar_sprite150428.png) no-repeat;
+								margin:7px 7px 0 7px;
+								background-position:0px 0px;
+								hover{
+									background-position:0px -20px;
+								}
+							}
+							
+					}
+					.app>i:hover{
+						background-position:0px -20px;
+					}
+					.company{
+							float:left;
+							margin-left:10px;			
+								.tuan{
+									float:left;
+									font-size:12px;
+									line-height:24px;	
+									color:#666;
+									text-align:center;
+								}	
+								.tuan:hover{
+									text-decoration:underline;
+								}
+								.person{
+									float:left;
+									width:14px;
+									height:14px;
+									background:url(../../img/topbar_sprite150428.png) no-repeat;
+									background-position:0px -45px;		
+									margin:7px 7px 0 0;
+								}
+					}
+					.company>i:hover{
+						background-position:0px -65px;
+					}
+					
+					.open{						
+						float:left;
+						margin-left:10px;
+						.tai{
+							float:left;
+							font-size:12px;
+							line-height:24px;	
+							color:#666;
+							text-align:center;
+						}	
+						.tuan:hover{
+							text-decoration:underline;
+						}
+						.black{
+							float:left;
+							width:14px;
+							height:14px;
+							background:url(../../img/topbar_sprite150428.png) no-repeat;
+							background-position:0px -92px;		
+							margin:7px 7px 0 0;
+						}
+					}
+					.open>i:hover{
+						background-position:0px -112px;
+					}
+						
+		
+		}
+		#top-r{
+			float:right;
+			overflow:hidden;			
+			.welcome{
+				float:left;
+				margin-left:12px;
+				font-size:12px;
+				line-height:24px;		
+				color:#666;
+				text-align:center;
+			}
+			.sev,.help{
+				float:left;
+				margin-left:22px;
+				height:24px;
+				font-size:12px;
+				line-height:24px;	
+				color:#666;
+				text-align:center;
+			}
+		}	
+}			
+
+
+header{
+	height:105px;
+	.logo{
+		float:left;
+		border-right:1px solid #dadada;
+		padding-right:25px;
+		margin-top:19px;
+	}
+	.login{
+		float:left;
+		height:50px;
+		text-align:center;
+		font-size:23px;
+		margin:19px 0 0 25px;
+		
+		line-height:50px;
+	}
+}
+
+#con{
+	height:484px;
+	background:#e3e3e3;
+	overflow:hidden;
+	.center{
+		width:982px;
+		height:395px;
+		margin:43px  auto;		
+		.logo-login{
+			float:left;
+		}
+		#login{
+			float:right;
+			width:362px;
+			height:395px;
+			border:1px solid #dadada;
+			background:#fff;
+			position:relative;
+			.biaoti{
+				padding:0 25px 0 30px;
+				height:65px;
+				span{
+					float:left;
+					font-weight:800;
+					font-size:17px;
+					line-height:65px;
+				}				
+				.reg{
+					float:right;					
+					font-size:12px;
+					line-height:65px;
+					color:#039;
+				}
+			}
+			ul{
+				width:305px;
+				position:absolute;
+				left:42px;
+				.username{					
+					height:57px;					
+					span{
+						display:block;
+						float:left;
+						width:30px;
+						height:33px;
+						background:#cfcfcf;
+					}
+					.txt{
+						float:left;
+						margin-left:1px;
+						width:250px;
+						height:31px;
+						border:1px solid #dadada;
+						vertical-align: middle;
+						text-indent:5px;
+					}
+				}
+				.userpsd{
+					height:57px;					
+					span{
+						display:block;
+						float:left;
+						width:30px;
+						height:33px;
+						background:#cfcfcf;
+					}
+					.psd{
+						float:left;
+						margin-left:1px;
+						width:250px;
+						height:31px;
+						border:1px solid #dadada;
+						vertical-align: middle;
+						text-indent:5px;
+					}
+				}
+				.hint{
+					width:250px;
+					height:31px;
+					margin-top:10px;
+					a{
+						color:#039;
+					}
+				}
+				.submit{
+					width:280px;
+					height:31px;
+					.sub{
+						width:280px;
+						height:31px;
+						background:#f7661f;
+						color:#fff;
+						border:0;
+					}
+				}
+			}
+			.partner{
+				width:310px;
+				position:absolute;
+				bottom:10px;
+				left:42px;
+				li{
+					float:left;
+					height:30px;
+					margin-top:6px;
+					margin-right:15px;
+					i{
+						display:inline-block;
+						width:30px;
+						height:30px;
+						vertical-align: middle;
+						background:url(../../img/zhifubao.png) no-repeat left;					
+					}
+					a{
+						font-size:12px;
+						
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+#other{
+		height:110px;
+		margin-top:80px;
+		ul{
+			margin:0 auto;
+			width:600px;
+			height:45px;
+			li{
+				float:left;
+				width:125px;
+				height:45px;
+				margin-right:5px;
+				
+				background:url(../../img/certi20150925.png) no-repeat;			
+			}
+		}
+		p{
+			text-align:center;
+			font-size:12px;
+			line-height:24px;
+			margin-top:7px;
+			a{
+				color:#000;
+			}
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

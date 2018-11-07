@@ -1,0 +1,193 @@
+.prosmore{
+				position:absolute;
+				left:150px;
+				top:-16px;
+				width:820px;
+				height:492px;
+				background:#f99;
+				z-index:10;				
+				.box1{
+					// display:none;
+					overflow:hidden;
+					margin-top:21px;
+					margin-left:21px;	
+					.beauty{
+							
+							height:12px;
+						h5{
+							float:left;
+							font-size:12px;
+						}
+						.list1{
+							width:700px;
+							float:left;
+							height:12px;
+							a{
+								font-size:12px;
+								text-align:center;
+								
+							}
+							a:hover{
+								text-decoration:underline;
+								
+							}
+							
+							i{
+								color:#ff6600;
+							}
+							i:hover{
+								text-decoration:underline;
+								
+							}
+						}
+						
+					}
+					.mom{
+						margin-top:26px;
+						height:12px;
+						h5{
+							float:left;
+							font-size:12px;
+						}
+						.list2{
+							
+							width:700px;
+							float:left;
+							height:12px;
+							a{
+								font-size:12px;
+								text-align:center;
+							}
+							a:hover{
+								text-decoration:underline;
+								
+							}
+							
+						}
+						
+					}
+					.nutrition{
+						margin-top:26px;
+						height:12px;
+						h5{
+							float:left;
+							font-size:12px;
+						}
+						.list3{
+							
+							width:700px;
+							float:left;
+							height:12px;
+							a{
+								font-size:12px;
+								text-align:center;
+							}
+							a:hover{
+								text-decoration:underline;
+							}
+							i{
+								color:#ff6600;
+							}
+						}
+						
+					}
+				}
+				.box2{
+					overflow:hidden;
+					margin-top:21px;
+					margin-left:21px;
+					.phone{
+						margin-top:26px;
+						height:12px;
+						h5{
+							float:left;
+							font-size:12px;
+						}
+						.list1{
+							width:700px;
+							float:left;
+							height:12px;
+							a{
+								font-size:12px;
+								text-align:center;
+								
+							}
+							a:hover{
+								text-decoration:underline;
+								
+							}
+							
+							i{
+								color:#ff6600;
+							}
+							i:hover{
+								text-decoration:underline;
+								
+							}
+					}
+					.apple{
+							margin-top:26px;
+							height:12px;
+							h5{
+								float:left;
+								font-size:12px;
+							}
+							.list1{
+								width:700px;
+								float:left;
+								height:12px;
+								a{
+									font-size:12px;
+									text-align:center;
+									
+								}
+								a:hover{
+									text-decoration:underline;
+									
+								}
+								
+								i{
+									color:#ff6600;
+								}
+								i:hover{
+									text-decoration:underline;									
+								}
+							}
+					}
+				}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="prosmore hide">
+				<div class="box1">					
+					<p class="beauty">
+						<h5>个体洗护</h5>
+						<a href="#">面膜</a>
+						<span>|</span>
+						<a href="#"><i>润肤</i></a>
+						<span>|</span>
+						<a href="#">面部彩妆</a>
+						<span>|</span>
+						<a href="#">洗发水</a>
+						<span>|</span>
+						<a href="#"><i>个护清洁</i></a>
+						<span>|</span>
+						<a href="#">香水</a>
+					</p>
+				</div>
+			</div>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="dist/css/index.min.css"/>
+		<script src="src/js/require.js" defer async="true" data-main='src/js/index'></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="top">
+			<div class="margin">
+				<div id="top-l">
+					<div class="app">
+						<i class="phone"></i>
+						<a href="#" class="egg">掌上新蛋</a>
+					</div>
+					<div  class="company">
+						<i class="person"></i>
+						<a href="#" class="tuan">企业团购</a>
+					</div>
+					
+				</div>
+				<div id="top-r">
+					<div class="register-login">
+						<a href="#" class="register">注册</a>
+						<sapn>|<span>
+						<a href="login.html" class="logo">登录</a>					
+					</div>
+					<span class="welcome">欢迎来到新蛋购物！</span>
+					<ul id="top-ul">
+						<li class="li1">
+							<a href="#" class="order">我的订单</a><b>^</b>			
+							<div class="white-frame-1">
+								<p>请<span>登录</span>后查看</p>			
+							</div>
+						</li>
+						<li class="li2">
+							<a href="#" class="myegg">我的新蛋</a><b>^</b>			
+						</li>
+						<li class="li3">
+							<a href="#" class="help">帮助中心</a><b>^</b>			
+						</li>
+						<li class="li4">
+							<a href="#" class="serve">客服中心</a><b>^</b>			
+						</li>
+						
+					</ul>
+				</div>
+					
+					
+			</div>
+				
+		</div>
+		<!-- 头部 -->
+	<header>
+		<div class="margin">
+			<div id="logo">
+				<a href="#"><img src="img/logocn_1213.png"/></a>	
+			</div>
+			<div id="header-c">
+				<div id="seach">
+					<input type="text" id="txt" placeholder="请输入关键字" name="txt"/>
+					<input type="button" id="btn" value="搜索"/>
+				</div>
+				<div id="small-title">
+					<a href="#">Bose</a>
+					<span>|</span>
+					<a href="#">iPhoneXS</a>
+					<span>|</span>
+					<a href="#">华为P20</a>
+					<span>|</span>
+					<a href="#">ThinkPad</a>
+					<span>|</span>
+					<a href="#">索尼电视机</a>
+					
+				</div>
+			</div>		
+		</div>	
+	</header>
+	
+	<!-- 导航-->
+<nav>
+	<div class="margin">
+		<h4>全部商品分类&nbsp;<i>^</i></h4>
+		<ul id="nav">
+			<li class="li1">
+				<a href="#">首页</a>
+				<!-- <span>首页</span> -->
+			</li>
+			<li>
+				<a href="#">限时团购</a>
+				<!-- <span>限时团购</span> -->
+			</li>
+			<li>
+				<a href="#">团团赚</a>
+				<!-- <span>团团赚</span> -->
+			</li>
+			<li>
+				<a href="#">爱车配</a>
+				<!-- <span>爱车配</span> -->
+			</li>
+			<li>
+				<a href="#">二手宝库</a>
+				<!-- <span>二手宝库</span> -->
+			</li>
+		</ul>
+
+	<p id="title">
+		<a href="#">首页</a>><a href="#">家用电器</a>><a href="#">多用途电锅</a>><a href="#">Mide</a>><a href="#">产品编号123456</a>
+	</p>
+	
+	<section id="show">
+			<img src="img/A09-6MG-5R1.jpg" alt="">
+			<span class="filter"></span>
+			<article class="bigImg">
+				<img src="img2/1.jpg" alt="">
+			</article>
+		</section>
+		<div class="btnBox">
+			<div class="smallImg">
+				<img src="img/A09-6MG-5R1.jpg" alt="">
+				<img src="img/A09-6MG-5R1_02.jpg" alt="">
+				<img src="img/A09-6MG-5R1_03.jpg" alt="">
+				<img src="img/A09-6MG-5R1_04.jpg" alt="">
+				<img src="img/A09-6MG-5R1_02.jpg" alt="">
+				
+			</div>
+			<span><</span><span>></span>
+		</div>
+	</body>
+	<script src="src/js/move.js"></script>
+	<script>
+		var 
+			oSmallImg = document.querySelector('.smallImg'),
+			oImg = document.querySelectorAll('.smallImg img'),
+			count = 0,
+			oSpan = document.querySelectorAll('.btnBox span'),
+			oShow = document.querySelector('.show'),
+			oBigImg = document.querySelector('.show img'),
+			oFilter = document.querySelector('.filter');
+		//通过图片的长度设置父元素的宽度
+		oSmallImg.style.width = oImg.length * (oImg[0].offsetWidth + 20) + 'px';
+		//控制小图左右切换
+		function pre(){
+			if(count == 0){
+				count = 0;
+			}else{
+				count--;
+			}
+			move(oSmallImg,{left:-(count * (oImg[0].offsetWidth + 20))})
+		}
+		function next(){
+			if(count >= oImg.length - 4){
+				count = oImg.length - 4
+			}else{
+				count++;
+			}
+			move(oSmallImg,{left:-(count * (oImg[0].offsetWidth + 20))})
+		}
+	
+		oSpan[0].onclick = function(){
+			 pre()
+		}
+		oSpan[1].onclick = function(){
+			 next()
+		}
+	
+	
+	
+		//鼠标划过小图。改变大图的路径
+		for(var i = 0 ; i < oImg.length ; i++){
+			oImg[i].onmouseover = function(){
+				oBigImg.src = this.src;
+			}
+		}
+	
+		//鼠标划过show   改变右侧放大镜里面的图片地址
+		oShow.onmouseenter = function(){
+			oShow.lastElementChild.firstElementChild.src = oShow.firstElementChild.src;
+			oFilter.style.display = 'block'
+			oShow.lastElementChild.style.display = 'block';
+		}
+		oShow.onmouseleave = function(){
+			oFilter.style.display = 'none'
+			oShow.lastElementChild.style.display = 'none';
+		}
+		//放大镜
+		oShow.onmousemove = function(e){
+			var 
+				e = e || window.event,
+				l = e.clientX - oShow.offsetLeft - oFilter.offsetWidth / 2,
+				t = e.clientY - oShow.offsetTop - oFilter.offsetHeight / 2;
+			//处理边界防止超出
+			l = l < 0 ? 0 : (l > 200 ? 200 : l);
+			t = t < 0 ? 0 : (t > 200 ? 200 : t);
+			oFilter.style.left = l + 'px';
+			oFilter.style.top = t + 'px';
+			//控制右侧大图的大小以及位置。
+			//遮罩 / 右侧的框 == 小图  / 大图大小
+			oShow.lastElementChild.firstElementChild.style.width = 800 + 'px';
+			oShow.lastElementChild.firstElementChild.style.height = 800 + 'px';
+			//控制右侧放大镜里面图片的位置
+			oShow.lastElementChild.firstElementChild.style.left = - 2 * l + 'px';
+			oShow.lastElementChild.firstElementChild.style.top = - 2 * t + 'px';
+		}
+	</script>
+	</body>
+</html>
